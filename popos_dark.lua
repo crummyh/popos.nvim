@@ -5,16 +5,16 @@ local M = {}
 
 -- UI
 M.base_30 = {
-  white = "",
-  black = "", -- usually your theme bg
-  darker_black = "", -- 6% darker than black
-  black2 = "", -- 6% lighter than black
-  one_bg = "", -- 10% lighter than black
-  one_bg2 = "", -- 6% lighter than one_bg2
-  one_bg3 = "", -- 6% lighter than one_bg3
-  grey = "", -- 40% lighter than black (the % here depends so choose the perfect grey!)
-  grey_fg = "", -- 10% lighter than grey
-  grey_fg2 = "", -- 5% lighter than grey
+  white = "#ffffff",
+  black = "#333333", -- usually your theme bg
+  darker_black = "#2d2d2d", -- 6% darker than black
+  black2 = "#3c3c3c", -- 6% lighter than black
+  one_bg = "#474747", -- 10% lighter than black
+  one_bg2 = "#5b5b5b", -- 6% lighter than one_bg2
+  one_bg3 = "#707070", -- 6% lighter than one_bg3
+  grey = "#888888", -- 40% lighter than black (the % here depends so choose the perfect grey!)
+  grey_fg = "#999999", -- 10% lighter than grey
+  grey_fg2 = "#aaaaaa", -- 5% lighter than grey
   light_grey = "",
   red = "",
   baby_pink = "",
@@ -25,7 +25,7 @@ M.base_30 = {
   nord_blue = "",
   blue = "",
   seablue = "",
-  yellow = "", -- 8% lighter than yellow
+  yellow = "", -- 8% lighter thane yellow
   sun = "",
   purple = "",
   dark_purple = "",
@@ -62,18 +62,18 @@ M.base_16 = {
 -- overriding or adding highlights for this specific theme only
 -- defaults/treesitter is the filename i.e integration there,
 
-M.polish_hl = {
-  defaults = {
-    Comment = {
-      bg = "#ffffff", -- or M.base_30.cyan
-      italic = true,
-    },
-  },
+--M.polish_hl = {
+--  defaults = {
+--    Comment = {
+--      bg = "#ffffff", -- or M.base_30.cyan
+--      italic = true,
+--    },
+--  },
 
-  treesitter = {
-    ["@variable"] = { fg = "#000000" },
-  },
-}
+--  treesitter = {
+--    ["@variable"] = { fg = "#000000" },
+--  },
+--}
 
 -- set the theme type whether is dark or light
 M.type = "dark" -- "or light"
